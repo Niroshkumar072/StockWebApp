@@ -10,6 +10,6 @@ This is Stock web app where you can download Stocks Data from a website and stor
 - [ ] Then open Your terminal and run *pip install -r requirements.txt*
 
 #Start app by
-- [ ] *streamlit run webapp.py* 
+- [ ] *streamlit run webapp.py* in your terminal.
 
 
