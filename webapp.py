@@ -4,7 +4,7 @@ from PIL import Image
 
 st.write("""#stock app which shows **Visually data**""")
 
-image = Image.open("C:/Users/NAWIN/Desktop/NiroshProjects/projects/python/stockapp/stockimg.jpg")
+image = Image.open("C:/file full path/stockapp/stockimg.jpg")
 st.image(image,use_column_width=True)
 
 st.sidebar.header('User Input')
@@ -28,11 +28,11 @@ def get_company(symbol):
 def get_data(symbol,start,end):
 
     if symbol == 'amzn':
-        df = pd.read_csv("C:/Users/NAWIN/Desktop/NiroshProjects/projects/python/stockapp/stocks/AMZN.csv")
+        df = pd.read_csv("C:/file full path/stockapp/stocks/AMZN.csv")
     elif symbol == 'fb':
-        df = pd.read_csv("C:/Users/NAWIN/Desktop/NiroshProjects/projects/python/stockapp/stocks/FB.csv")
+        df = pd.read_csv("C:/file full path/stockapp/stocks/FB.csv")
     elif symbol == 'google':
-        df = pd.read_csv("C:/Users/NAWIN/Desktop/NiroshProjects/projects/python/stockapp/stocks/google.csv")
+        df = pd.read_csv("C:/file full path/stockapp/stocks/google.csv")
     else:
         df = pd.DataFrame(columns = ['Date','Close','Open','Volume','Adj Close','High','Low'])
 
